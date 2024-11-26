@@ -1,0 +1,40 @@
+I have experimented with the following configs. 
+
+1)
+LR: 0.1
+Batch size: 32
+Epochs: 10 
+
+Resulting test accuracy:  97.55%
+
+2)
+LR: 0.2
+Batch size: 64
+Epochs: 5
+
+Resulting test accuracy:  98.19%
+
+3)
+LR: 0.3
+Batch size: 128
+Epochs: 5
+
+Resulting test accuracy:  98.23%%
+
+4)
+LR: 0.3
+Batch size: 128
+Epochs: 3
+
+Resulting test accuracy:  98.32%%
+
+
+Conclusion:
+
+Since the MNIST task is far too easy for the CNN model we are training here, 
+convergence is fairly trivial regardless of the configuration. I gradually increased
+the batch size from 8 to 32, then 64, and finally 128. In parallel, I also increased the
+learning rate since increased batch size reduces the stochasticity of backrop, allowing 
+convergence with larger batch sizes. Finally, I found that training beyond 3 epochs is 
+redundant and causes overfitting, therefore I implemented an early-stopping strategy at
+3 epochs in my final config. End result is commensurate to the other configurations. 

@@ -1,5 +1,10 @@
 # 🚀 Parallel Training Methods for AI
 
+My homework report can be found here: 
+https://api.wandb.ai/links/ogokdemir-the-university-of-chicago/8wcba7tr
+
+
+
 [Sam Foreman](https://samforeman.me)  
 [Intro to AI-driven Science on Supercomputers](https://www.alcf.anl.gov/alcf-ai-science-training-series)  
 _2024-11-05_
